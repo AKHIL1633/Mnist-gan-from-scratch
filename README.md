@@ -22,17 +22,18 @@ This project implements a Generative Adversarial Network (GAN) from scratch usin
 
 - Preprocessing: Normalize MNIST images to [-1, 1] range to stabilize GAN training.
 
-- Model Architecture:
+- Model Architecture :
 
-    - Generator:
+    - Generator :
 
-Dense projection layer followed by reshaping to image form.
+        - Dense projection layer followed by reshaping to image form.
 
-Upsampling using Conv2DTranspose layers with LeakyReLU and BatchNormalization.
+        - Upsampling using Conv2DTranspose layers with LeakyReLU and BatchNormalization.
 
-Discriminator:
+   - Discriminator:
 
-CNN-based model with Conv2D layers, dropout, and dense output for binary classification.
+       - CNN-based model with Conv2D layers, dropout, and dense output for binary classification.
+    
 
 
 
