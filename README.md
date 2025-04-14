@@ -44,13 +44,13 @@ This project implements a Generative Adversarial Network (GAN) from scratch usin
 
       - Visual check of generated digits during training.
         
- # Datasets
+# Datasets
  
-    - Source: Keras MNIST Dataset
+   - Source: Keras MNIST Dataset
+     
+   - Details: 60,000 training images of handwritten digits (0–9), grayscale, size 28×28.
 
-    - Details: 60,000 training images of handwritten digits (0–9), grayscale, size 28×28.
-
-    - Labels: Not used in GAN (unsupervised training).
+   - Labels: Not used in GAN (unsupervised training).
 
 
 
