@@ -16,6 +16,24 @@ This project implements a Generative Adversarial Network (GAN) from scratch usin
 
 - Visualize training progress with sample image generation.
 
--Custom training loop with manual control over loss functions and optimizers.
+- Custom training loop with manual control over loss functions and optimizers.
+
+# Methodology
+
+- Preprocessing: Normalize MNIST images to [-1, 1] range to stabilize GAN training.
+
+- Model Architecture:
+
+    - Generator:
+
+Dense projection layer followed by reshaping to image form.
+
+Upsampling using Conv2DTranspose layers with LeakyReLU and BatchNormalization.
+
+Discriminator:
+
+CNN-based model with Conv2D layers, dropout, and dense output for binary classification.
+
+
 
 
