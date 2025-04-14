@@ -1,4 +1,4 @@
-# Mnist-gan-from-scratch
+# Mnist-Gan-from-scratch
 
 # Project Overview
 
@@ -8,7 +8,7 @@ This project implements a Generative Adversarial Network (GAN) from scratch usin
 - Build and train a GAN using TensorFlow and Keras.
 -Load and preprocess the MNIST dataset (grayscale 28x28 handwritten digits).
 
-# Design and implement:
+# Design and implement
 
 - A Generator to create digit images from random noise.
 
@@ -30,11 +30,27 @@ This project implements a Generative Adversarial Network (GAN) from scratch usin
 
         - Upsampling using Conv2DTranspose layers with LeakyReLU and BatchNormalization.
 
-   - Discriminator:
+   - Discriminator :
 
        - CNN-based model with Conv2D layers, dropout, and dense output for binary classification.
-    
 
+   - Training Strategy :
+     
+      - Binary Crossentropy loss with from_logits=True.
+
+      - Alternating updates between discriminator and generator.
+
+      - Use of random noise vectors (z) as GAN inputs.
+
+      - Visual check of generated digits during training.
+        
+ # Datasets
+ 
+    - Source: Keras MNIST Dataset
+
+    - Details: 60,000 training images of handwritten digits (0–9), grayscale, size 28×28.
+
+    - Labels: Not used in GAN (unsupervised training).
 
 
 
